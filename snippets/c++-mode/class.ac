@@ -8,7 +8,7 @@ public:
     "  a   "(const "  a   "&) = delete;
     "  a   "& operator=(const "  a   "& other) = delete;
 
-    virtual ~"  a   "();
+    virtual ~"  a   "() = default;
 private:
 };
 "
