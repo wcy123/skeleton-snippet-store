@@ -1,0 +1,12 @@
+
+(nil
+ > "lager:debug(\"~s~n\", [erlang:iolist_to_binary([\"debugging: \\n\" " _ "])]),"
+
+ )
+
+
+
+;; Local Variables:
+;; mode:emacs-lisp
+;; coding: utf-8-unix
+;; End:
