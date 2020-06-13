@@ -1,0 +1,12 @@
+(nil
+ (progn
+   (require 'cl-seq)
+   (aif (cl-find-if #'buffer-file-name (buffer-list))
+       (file-relative-name (buffer-file-name it))
+     "")
+   ))
+
+;; Local Variables:
+;; mode:emacs-lisp
+;; coding: utf-8-unix
+;; End:
