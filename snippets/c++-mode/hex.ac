@@ -1,0 +1,8 @@
+(nil
+ "std::hex << \"0x\" << " _ >)
+
+
+;; Local Variables:
+;; mode:emacs-lisp
+;; coding: utf-8-unix
+;; End:
