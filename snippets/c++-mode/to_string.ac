@@ -1,0 +1,15 @@
+
+(nil
+"
+std::string to_string(const " _ " & value) {
+    std::ostringstream str;
+    str << value;
+    return str.str();
+};
+"
+ )
+
+;; Local Variables:
+;; mode:emacs-lisp
+;; coding: utf-8-unix
+;; End:
