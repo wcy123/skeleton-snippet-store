@@ -10,7 +10,7 @@
        (mapconcat (lambda (id) id) ret " "))
      ")\n"
      "(export " > _")" ?\n
-     > "(import (chezscheme))" ?\n
+     > "(import (scheme))" ?\n
      > ")")
 ;; Local Variables:
 ;; mode:emacs-lisp
