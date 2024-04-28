@@ -1,4 +1,14 @@
-(nil "(library (" (file-name-base (buffer-file-name)) ")\n"
+(nil "(library ("
+     (let* ((file-name (file-relative-name
+                        (buffer-file-name)
+                        (leader-key-mode-find-project-root
+                         default-directory)))
+            (libs (split-string file-name "/"))
+            (libs (reverse libs))
+            (libs (cons (file-name-base (car libs)) (cdr libs)))
+            (ret (reverse libs)))
+       (mapconcat (lambda (id) id) ret " "))
+     ")\n"
      "(export " > _")" ?\n
      > "(import (chezscheme))" ?\n
      > ")")
